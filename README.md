@@ -64,5 +64,4 @@ $(function(){
 });
 ```
 
-### Demo
-[VIEW DEMO](https://anfathhifans.github.io/easyslider/)
+## [Demo](https://anfathhifans.github.io/easyslider/)
