@@ -63,3 +63,6 @@ $(function(){
   $('#slider').slider();
 });
 ```
+
+### Demo
+[https://anfathhifans.github.io/easyslider/](https://anfathhifans.github.io/easyslider/)
