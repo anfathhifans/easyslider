@@ -1,0 +1,69 @@
+body, html { height: 100%; }
+a{ text-decoration: none; }
+
+#slider{
+	position: relative;	
+	width: 500px;
+	height: auto;
+	margin: 50px auto;
+	text-align: center;	
+}
+#slider .slide-button{
+	position: relative;
+	display: block;	
+	padding: 5px 0;
+}
+	#slider .slide-button a{
+		display: inline-block;
+		position: relative;
+		font-size: 13px;
+		font-weight: bold;
+		font-family: 'Open sans', sans-serif;
+		text-transform: uppercase;		
+		color: #000;
+	}
+	#slider .slide-button a:hover{
+		color: #d00;
+	}
+	#slider .slide-button a:not(:first-child){
+		margin-left: 20px;
+	}
+	#slider .slide-button a:first-child:after{
+		position: absolute;
+		content: '';
+		top: 50%;
+		right: -12.5px;
+		margin-top: -6px;
+		height: 12px;
+		width: 1px;
+		border-right: 1px solid #000;
+	}
+#slider .slide-blocks{
+	position: relative;
+	height: auto;
+	min-height: 325px;
+	display: block;
+	padding: 20px;
+	bordeR: 1px solid #dcdcdc;
+}
+#slider .slide-blocks > div{
+	position: relative;			
+}
+#slider .slide-blocks .slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+#slider .slide-blocks .slide:not(.active){
+	visibility: hidden;
+}
+#slider .slide-blocks .slide.active{
+	-webkit-animation: fadeIn 1s both;
+	-moz-animation: fadeIn 1s both;
+	-o-animation: fadeIn 1s both;
+	-ms-animation: fadeIn 1s both;
+	animation: fadeIn 1s both;
+	visibility: visible;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+	<head>        
+        <link rel="stylesheet" href="style.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="slider.min.js"></script>
+    </head>
+	<body>
+	
+		<div id="slider">
+			<div class="slide-button">
+				<a href="javascript:void(0);" data-arrow="prev" class="navArrow">< Previous</a>
+				<a href="javascript:void(0);" data-arrow="next" class="navArrow">Next ></a>			
+			</div>
+			<div class="slide-blocks">
+				<div>
+					<div class="slide active">Fusce ac felis sit amet ligula pharetra condimentum. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Ut leo. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Aenean vulputate eleifend tellus.</div>
+					<div class="slide">
+						<img src="https://placeimg.com/480/320/arch/grayscale" alt="" />
+					</div>
+					<div class="slide">Pellentesque auctor neque nec urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nullam accumsan lorem in dui. Maecenas nec odio et ante tincidunt tempus. Vivamus in erat ut urna cursus vestibulum.</div>
+					<!-- more divs -->
+				</div>
+				<div> <!-- separate blocks (optional) -->
+					<div class="slide">
+						<img src="https://placeimg.com/480/320/animals/sepia" alt="" />
+					</div>
+					<div class="slide">
+						<img src="https://placeimg.com/480/320/nature/grayscale" alt="" />
+					</div>
+					<div class="slide">Aliquam eu nunc. Cras ultricies mi eu turpis hendrerit fringilla. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nam eget dui. Sed a libero.</div>
+					<!-- more divs -->
+				</div>
+				<div> <!-- separate blocks (optional) -->
+					<div class="slide">Fusce commodo aliquam arcu. Phasellus accumsan cursus velit. Cras dapibus. Nunc interdum lacus sit amet orci. Nunc sed turpis.</div>
+					<div class="slide">
+						<img src="https://placeimg.com/480/320/arch//grayscale" alt="" />
+					</div>
+					<div class="slide">
+						<img src="https://placeimg.com/480/320/tech/sepia" alt="" />
+					</div>
+					<!-- more divs -->
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('#slider').slider();
+			});
+		</script>	
+		
+	</body>
+</html>
